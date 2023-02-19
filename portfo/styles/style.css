@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:wght@400;600&display=swap');
+
+:root{
+    --cor-1: rgb(10, 10, 10);
+    --cor-2: #BFBFBF;
+    --cor-3: #03A64A;
+
+    --font-p: 'Krona One', sans-serif;
+    --font-s: 'Montserrat', sans-serif;
+}
+body{
+    height: 100vh;
+    box-sizing: border-box;
+    background-color: var(--cor-1);
+    color: var(--cor-2);
+}
+
+.cabecalho{
+    padding: 3% 0% 0% 10%;
+}
+
+.cabecalho__menu{
+    display: flex;
+    gap: 35px;
+}
+
+.cabecalho__menu__link{
+    color: var(--cor-3);
+    font-family: var(--font-p);
+    font-weight: 400;
+    text-decoration: none;
+}
+
+strong{
+    color: var(--cor-3);
+}
+
+.conteudo{
+    padding: 4.7% 12%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.conteudo__section{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.conteudo__section__titulo{
+    font-size: 1.625rem;
+    font-family: var(--font-p);
+}
+
+.conteudo__section__texto{
+    font-size: 1.0625rem;
+    font-family: var(--font-s);
+}
+
+.conteudo__section__links{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    justify-content: space-between;
+}
+
+.conteudo__section__links__foto{
+    width: 25px;
+    height: 25px;
+}
+
+.conteudo__section__links__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 6px;
+    border: 1.5px solid var(--cor-3);;
+    text-decoration: none;
+    text-align: center;
+    color: var(--cor-2);
+    width: 60%;
+    border-radius: 6px;
+    font-size: 1.125rem;
+    font-weight: 600;
+    padding: 10.5px 0px;
+    font-family: var(--font-s);
+}
+
+.conteudo__section__links__link:hover {
+    background-color: #272727;
+}
+
+.conteudo__section__links__subtitulo{
+    font-family: var(--font-p);
+    font-weight: 400;
+    font-size: 1,1875rem;
+}
+
+.conteudo__section__foto{
+    border: 3px solid var(--cor-3);;
+    border-radius: 30px;
+    border-bottom-width: 0;
+    border-left-width: 0;
+    width: 40%;
+    padding: 8px 8px 5px 5px;
+}
+
+.rodape {
+    background-color: var(--cor-3);;
+    color: var(--cor-1);
+    text-align: center;
+    font-family: var(--font-s);
+    font-size: 1.125rem;
+    padding: 18px;
+}
+
+@media (max-width: 1000px){
+    .cabecalho{
+        padding: 8%;
+    }
+    .cabecalho__menu{
+        justify-content: center;
+    }
+    .conteudo{
+        flex-direction: column-reverse;
+    }
+    .conteudo__section{
+        width: auto;
+    }
+}
